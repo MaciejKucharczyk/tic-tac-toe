@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    position: relative;
+  }
+  
+  .square {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .square:hover {
+    background-color: #ffffe0;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  .line {
+    width: 160px; /* długość linii */
+    height: 2px; /* grubość linii */
+    background-color: black; /* kolor linii */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+
+#line1 {
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: calc(100% - 20px); /* szerokość planszy minus odstępy */
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: calc(20px + 1px); /* wysokość pojedynczego kwadratu + odstęp */
+    left: 75px; /* przesunięcie do początku planszy */
+    opacity: 0;
+}
+
+#line2 {
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: calc(100% - 20px); /* szerokość planszy minus odstępy */
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: calc(120px + 1px); /* wysokość pojedynczego kwadratu + odstęp */
+    left: 75px; /* przesunięcie do początku planszy */
+    opacity: 0;
+}
+
+#line3 {
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: calc(100% - 20px); /* szerokość planszy minus odstępy */
+    opacity: 0;
+}
+
+#line4 {
+    transform: translate(-50%, -50%) rotate(90deg);
+    left: 125px; /* przesunięcie do początku planszy */
+    opacity: 0;
+}
+
+#line5 {
+    transform: translate(-50%, -50%) rotate(90deg);
+    left: 25px; /* przesunięcie do początku planszy */
+    opacity: 0;
+}
+
+#line6 {
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 0;
+}
+
+#line7 {
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+}
+
+#line8 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    opacity: 0;
+}
+  
+  
+  #resetButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  #resetButton:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  #endMessage {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+  }
