@@ -49,57 +49,57 @@
     transform-origin: center;
 }
 
-#line1 {
+#line1 { /* linia pozioma gorna */
     transform: translate(-50%, -50%) rotate(0deg);
     width: calc(100% - 20px); /* szerokość planszy minus odstępy */
     height: 2px;
     background-color: black;
     position: absolute;
-    top: calc(20px + 1px); /* wysokość pojedynczego kwadratu + odstęp */
+    top: calc(28px + 1px); /* wysokość pojedynczego kwadratu + odstęp */
     left: 75px; /* przesunięcie do początku planszy */
     opacity: 0;
 }
 
-#line2 {
+#line2 { /* linia pozioma dolna */
     transform: translate(-50%, -50%) rotate(0deg);
     width: calc(100% - 20px); /* szerokość planszy minus odstępy */
     height: 2px;
     background-color: black;
     position: absolute;
-    top: calc(120px + 1px); /* wysokość pojedynczego kwadratu + odstęp */
+    top: calc(150px + 1px); /* wysokość pojedynczego kwadratu + odstęp */
     left: 75px; /* przesunięcie do początku planszy */
     opacity: 0;
 }
 
-#line3 {
+#line3 { /* linia pozioma srodkowa */
     transform: translate(-50%, -50%) rotate(0deg);
     width: calc(100% - 20px); /* szerokość planszy minus odstępy */
     opacity: 0;
 }
 
-#line4 {
+#line4 { /* linia pionowa prawa */
     transform: translate(-50%, -50%) rotate(90deg);
     left: 125px; /* przesunięcie do początku planszy */
     opacity: 0;
 }
 
-#line5 {
+#line5 { /* linia pionowa lewa */
     transform: translate(-50%, -50%) rotate(90deg);
     left: 25px; /* przesunięcie do początku planszy */
     opacity: 0;
 }
 
-#line6 {
+#line6 { /* linia pionowa srodkowa */
     transform: translate(-50%, -50%) rotate(90deg);
     opacity: 0;
 }
 
-#line7 {
+#line7 { /* linia skosna lewy gorny do prawy dolny */
     transform: translate(-50%, -50%) rotate(45deg);
     opacity: 0;
 }
 
-#line8 {
+#line8 {  /* linia skosna lewy dolny do prawy gorny */
     transform: translate(-50%, -50%) rotate(-45deg);
     opacity: 0;
 }
